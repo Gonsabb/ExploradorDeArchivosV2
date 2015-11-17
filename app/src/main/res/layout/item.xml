@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCarpeta"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/carpeta"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/archivo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivCarpeta"
+        android:layout_toEndOf="@+id/ivCarpeta"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivArchivo"
+        android:src="@drawable/archivo"
+        android:layout_alignTop="@+id/ivCarpeta"
+        android:layout_alignLeft="@+id/ivCarpeta"
+        android:layout_alignStart="@+id/ivCarpeta" />
+</RelativeLayout>
